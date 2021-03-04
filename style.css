@@ -3,6 +3,7 @@
     --lightCyan: #2cc0c6;
     --textColor: #2D3248;
     --subText: #6A6F81;
+    --neutralGray: #969696;
 }
 
 *{
@@ -13,6 +14,7 @@
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
 }
 
 .container{
@@ -26,37 +28,89 @@ body{
     overflow: hidden; 
 }
 
-.bgCircles{
-    border-radius: 50%;
-    background-color: var(--lightCyan);
-    background-image: linear-gradient(180deg,var(--lightCyan),var(--darkCyan));
+.topCircle{
     position: absolute;
-    width: 1500px;
-    height: 1500px;
-    top: -55%;
-    left: -10%;
-    z-index: 1;
+    top: -20%;
+    left: 10%;
 }
 
-.bgCirclesBottom{
-    border-radius: 50%;
-    background-color: var(--lightCyan);
-    background-image: linear-gradient(80deg,var(--lightCyan),var(--darkCyan));
+.bottomCircle{
     position: absolute;
-    width: 1500px;
-    height: 1500px;
-    top: 55%;
-    right: -10%;
-    z-index: 1;
+    bottom: -30%;
+    right: 15%;
 }
 
 .card{
-    width: 650px;
-    height: 600px;
+    position: relative;
+    width: 350px;
+    height: 400px;
     z-index: 2;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.topCard{
+    position: absolute;
+    top: 0;
+}
+
+.profilePic{
+    position: absolute;
+    top: 22%;
+    border: solid white 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55%;
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+#age{
+    font-weight: 400;
+    color: var(--subText);
+}
+
+.city{
+    color: var(--subText);
+    font-size: 16px;
+    margin: 3% 0 5% 0;
+    text-align: center;
+}
+
+.middle{
+    width: 100%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid var(--neutralGray);
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.numbers{
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+.statText{
+    color: var(--subText);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
 }
