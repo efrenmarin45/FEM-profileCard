@@ -3,7 +3,7 @@
     --lightCyan: #2cc0c6;
     --textColor: #2D3248;
     --subText: #6A6F81;
-    --neutralGray: #969696;
+    --neutralGray: rgba(150, 150, 150, .4);
 }
 
 *{
@@ -43,7 +43,7 @@ body{
 .card{
     position: relative;
     width: 350px;
-    height: 400px;
+    height: 375px;
     z-index: 2;
     background-color: white;
     display: flex;
