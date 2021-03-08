@@ -43,7 +43,7 @@ body{
 .card{
     position: relative;
     width: 350px;
-    height: 350px;
+    height: 300px;
     z-index: 2;
     background-color: white;
     display: flex;
